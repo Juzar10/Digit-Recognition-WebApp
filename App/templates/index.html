@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="../static/css/style.css" />
+  <title></title>
+</head>
+
+<body>
+
+  <div class="introduction">
+    <h1>Digit Recognition WebApp</h1>
+    <h3>Using Tensorflow and Flask</h3>
+  </div>
+
+
+
+  <div class="canvas">
+    <canvas id="canvas">
+    </canvas>
+
+
+
+  </div>
+  <div class="wrapper">
+    <button type="button" name="clear" id="clear" class="btn">Clear</button>
+    <button type="button" name="submit" id="submit" class="btn">Execute</button>
+  </div>
+  <div class="result" id="result" class="result">
+    <!-- The Result is probably 3 -->
+  </div>
+
+  <div class="Use">
+    <h2>How to Use it?</h2>
+    <p>
+      <li>You can draw an digit on the box above Using mouse or touchpad and then
+        press button called execute to see the result.</li>
+    </p>
+    <p>
+      <li>Press button Clear to clear the box.</li>
+    </p>
+
+  </div>
+  </h2>
+
+  <div class="Use">
+    <h2>How it Works?</h2>
+    <p>
+      <li>It generates the Image through canvas element of HTML and then it sends that Image to flask file.</li>
+    </p>
+    <p>
+      <li>Then flask files does computations on image using library like Pillow and Tensorflow.</li>
+    </p>
+    <p>
+      <li>And Result is returned Using ajax functionality of jquery library</li>
+    </p>
+
+  </div>
+
+
+  <div class="Use">
+    <h2>Who made This?</h2>
+    <p>
+      <li>It was created by Juzar Bharmal.</li>
+    </p>
+  </div>
+
+  <script src="../static/js/canvas.js">
+  </script>
+  </script>
+</body>
+
+</html>
